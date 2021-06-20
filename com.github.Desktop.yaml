@@ -12,7 +12,7 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=pulseaudio
-  - --sokcet=ssh-auth
+  - --socket=ssh-auth
   - --share=network
   - --device=all
   - --device=dri
@@ -72,7 +72,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/shiftkey/desktop.git
-        branch: linux
         commit: e08f8d46dcaa512812bdab3a7360164930118bc8
       
       - type: file
