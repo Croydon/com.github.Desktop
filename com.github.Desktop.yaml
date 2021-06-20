@@ -1,4 +1,4 @@
-app-id: com.github.shiftkey.Github_desktop
+app-id: com.github.Desktop
 base: org.electronjs.Electron2.BaseApp
 base-version: '20.08'
 runtime: org.freedesktop.Platform
@@ -67,18 +67,18 @@ modules:
       - install -Dm644 app/static/logos/128x128.png  /app/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
       - install -Dm644 app/static/logos/256x256.png  /app/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -Dm644 app/static/logos/512x512.png  /app/share/icons/hicolor/512x512/apps/$FLATPAK_ID.png
-      - install -D com.github.shiftkey.Github_desktop.desktop -t /app/share/applications/
-      - install -D  com.github.shiftkey.Github_desktop.metainfo.xml -t /app/share/metainfo/
+      - install -D com.github.Desktop.desktop -t /app/share/applications/
+      - install -D  com.github.Desktop.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: git
         url: https://github.com/shiftkey/desktop.git
         commit: e08f8d46dcaa512812bdab3a7360164930118bc8
       
       - type: file
-        path: com.github.shiftkey.Github_desktop.desktop
+        path: com.github.Desktop.desktop
       
       - type: file
-        path: com.github.shiftkey.Github_desktop.metainfo.xml
+        path: com.github.Desktop.metainfo.xml
 
       - type: patch
         paths:

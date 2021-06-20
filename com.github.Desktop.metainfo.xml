@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.github.shiftkey.Github_desktop</id>
+  <id>com.github.Desktop</id>
   
   <name>Github-desktop</name>
   <summary>GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React</summary>
@@ -15,7 +15,7 @@
     </p>
   </description>
   
-  <launchable type="desktop-id">com.github.shiftkey.Github_desktop.desktop</launchable>
+  <launchable type="desktop-id">com.github.Desktop.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://cloud.githubusercontent.com/assets/359239/26094502/a1f56d02-3a5d-11e7-8799-23c7ba5e5106.png</image>
