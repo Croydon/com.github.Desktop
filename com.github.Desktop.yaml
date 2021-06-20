@@ -5,7 +5,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node12
+  - org.freedesktop.Sdk.Extension.node14
 command: start-github-desktop
 separate-locales: false
 finish-args:
@@ -41,10 +41,10 @@ modules:
     buildsystem: simple
     build-options:
       # Add the node bin directory & yarn directory.
-      append-path: '/usr/lib/sdk/node12/bin:/app/yarn/bin:/run/build/github-desktop/flatpak-node/chromedriver'
+      append-path: '/usr/lib/sdk/node14/bin:/app/yarn/bin:/run/build/github-desktop/flatpak-node/chromedriver'
       env:
         # Sets the directory where Node is located so way npm won't download the headers.
-        npm_config_nodedir: '/usr/lib/sdk/node12'
+        npm_config_nodedir: '/usr/lib/sdk/node14'
         # Set the Electron cache directory.
         ELECTRON_CACHE: '/run/build/github-desktop/flatpak-node/electron-cache'
         # Skip Electron related downloads
